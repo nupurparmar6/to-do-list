@@ -1,4 +1,17 @@
 #container{
     margin: 0 auto;
     width: 360px;
+    background: pink;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* strike through class */
+.strike{
+    color: gray;
+    text-decoration: line-through;
+    
 }
