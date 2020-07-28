@@ -22,8 +22,10 @@ $("input[type='text']").on("keypress",function(event){
             $("ul").append("<li><span class=\"delete\"><i class=\"fas fa-trash\"></i></span>"+content+"</li>");
         }
         $(this).val("");
-
     }
+});
 
-
+//adding the form toggler
+$("#plus").on("click", function(){
+    $("input[type='text']").fadeToggle();
 });
