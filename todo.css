@@ -1,3 +1,10 @@
+
+body{
+    background: #24C6DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 h1{
     background: blueviolet;
     color: white;
@@ -9,12 +16,6 @@ h1{
     font-family: 'Roboto', sans-serif;
 }
 
-#container{
-    margin: 100px auto;
-    width: 360px;
-    background: #f7f7f7;
-    box-shadow: 0 0 3px rgba(0,0,0,0.2);
-}
 input{
     width: 100%;
     padding: 13px;
@@ -23,12 +24,12 @@ input{
     padding: 13px 13px 13px 20px;
     box-sizing: border-box;
     outline: none;
-    border: 2px solid rgba(0,0,0,0.2);
+    border: 3px solid rgba(0,0,0,0);
 }
 
 input:focus{
     background: white;
-    border: solid 2px blueviolet;
+    border: solid 3px blueviolet;
 }
 
 ul{
@@ -46,6 +47,27 @@ li:nth-of-type(2n){
     background:#f7f7f7;
 }
 
+li span{
+    height: 40px;
+    width: 0px;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+    color:white;
+    opacity: 0;
+    transition: 0.2s linear;
+}
+
+li:hover span{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background:#eb0c0c;
+    margin-right: 20px;
+    text-align: center;
+    opacity: 1.0;
+    transition: 0.2s linear;
+}
 
 /* strike through class */
 .strike{
@@ -55,4 +77,11 @@ li:nth-of-type(2n){
 
 .fa-plus{
     float: right;
+}
+
+#container{
+    margin: 100px auto;
+    width: 360px;
+    background: #f7f7f7;
+    box-shadow: 0 0 2px rgba(97, 79, 79, 0.2s);
 }
